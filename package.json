@@ -1,0 +1,21 @@
+{
+  "name": "shashi-sah",
+  "version": "0.0.4",
+  "description": "This is a CLI tool to display Shashi Sah information",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "shashi": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "shashi-sah",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.0"
+  }
+}
