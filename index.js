@@ -15,15 +15,20 @@
         process.stdout.write('\n');
     };
 
-    // Gradually reveal the output
+    // it will help to create hidden hyperlinks
+    const hyperlink = (text, url) => `\u001b]8;;${url}\u001b\\${text}\u001b]8;;\u001b\\`;
+
+    
     await printLine(chalk.blue(figlet.textSync('Shashi Sah', { horizontalLayout: 'full' })), 1);
 
   // Contact Information
   const contactInfo = boxen(
     `${chalk.white.bold('Contact:')}
-  📧 ${chalk.blue('sah.shashi2003@gmail.com')}
+  📧 ${hyperlink('sah.shashi2003@gmail.com', 'mailto:sah.shashi2003@gmail.com')}
   📱 ${chalk.blue('+91-9667539064')}
-  🔗 ${chalk.blue('GitHub')} | ${chalk.blue('LinkedIn')} | ${chalk.blue('Portfolio')}
+  🔗 ${hyperlink('GitHub', 'https://github.com/shashi-sah2003')}
+  🔗 ${hyperlink('LinkedIn', 'https://www.linkedin.com/in/shashi-sah-56aa77175/')}
+  🔗 ${hyperlink('Portfolio', 'https://shashi-sah.vercel.app/')}
   🎓 ${chalk.yellow('DTU Roll: 2K22/CO/425')}`,
     {
       padding: 1,
