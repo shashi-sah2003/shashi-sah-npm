@@ -1,6 +1,6 @@
 {
   "name": "shashi-sah",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This is a CLI tool to display Shashi Sah information",
   "main": "index.js",
   "type": "commonjs",
